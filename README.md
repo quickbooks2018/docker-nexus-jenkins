@@ -3,5 +3,5 @@
 - Jenkins Nexus Docker Setup
 
 ```bash
-docker-compose up -d
+docker compose -p nexus up -d
 ```
