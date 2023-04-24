@@ -24,7 +24,7 @@ pipeline {
                     ],
                      credentialsId: 'nexus', groupId: 'cloudgeeks', nexusUrl: 'nexus:8081/repository/app/',
                       nexusVersion: 'nexus3', protocol: 'http', repository: 'app',
-                       version: '${mavenPom.version}'
+                       version: "${mavenPom.version}"
                     }
             }
         }
