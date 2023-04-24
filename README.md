@@ -6,7 +6,7 @@
 docker compose -p nexus up -d
 ```
 
-- Install this Jenkins Plugin
+- Install this Jenkins Plugin & must restart Jenkins
 
 ```bash
 Pipeline Utility Steps
