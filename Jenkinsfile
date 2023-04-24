@@ -18,12 +18,12 @@ pipeline {
                 
                     nexusArtifactUploader artifacts: 
                     [
-                        [artifactId: 'app', classifier: '', file: 'target/app-1.0.0.war', type: 'war']
+                        [artifactId: 'app', classifier: '', file: 'target/app-1.0.1.war', type: 'war']
                         
                     ],
                      credentialsId: 'nexus', groupId: 'cloudgeeks', nexusUrl: 'nexus:8081/repository/app/',
                       nexusVersion: 'nexus3', protocol: 'http', repository: 'app',
-                       version: '1.0.0'
+                       version: '1.0.1'
                     }
             }
         }
