@@ -11,6 +11,7 @@ services:
       - NEXUS_SECURITY_ADMINPASSWORD=admin123
     networks:
       - nexus_network
+    restart: unless-stopped
 
   jenkins:
     image: jenkins/jenkins:lts
@@ -26,6 +27,7 @@ services:
       - jenkins_home:/var/jenkins_home
     networks:
       - nexus_network
+    restart: unless-stopped
 
 volumes:
   nexus-data:
